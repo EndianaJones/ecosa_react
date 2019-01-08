@@ -44,7 +44,8 @@ export default class Walkthrough extends React.Component<ScreenProps<>> {
                 >
                     <View style={[Styles.center, Styles.flexGrow]}>
                         <Phone />
-                        <Text>Share with coworkers, friends, and family</Text>
+                        <Text>Study the sabbath school lesson daily</Text>
+                        <Text>Estudia diariamente la lección de la escuela sabática</Text>
                     </View>
                     <View style={[Styles.center, Styles.flexGrow]}>
                         <Phone />

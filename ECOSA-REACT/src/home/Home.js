@@ -20,6 +20,7 @@ export default class Home extends React.Component<ScreenProps<>> {
         const date = today.format("MMMM D");
         const dayOfWeek = today.format("dddd").toUpperCase();
         const {navigation} = this.props;
+        
         return (
             <BaseContainer title={dayOfWeek} {...{ navigation }} scrollable>
                 <View>

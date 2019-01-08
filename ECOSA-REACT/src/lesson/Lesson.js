@@ -8,26 +8,26 @@ import type {ScreenProps} from "../components/Types";
 
 import variables from "../../native-base-theme/variables/commonColor";
 
-export default class Groups extends React.PureComponent<ScreenProps<>> {
+export default class Lesson extends React.PureComponent<ScreenProps<>> {
 
     render(): React.Node {
         return (
             <BaseContainer title="Lesson" navigation={this.props.navigation} scrollable>
-                <Group title="Ecole Du Sabbat" description="15 ITEMS" picture={Images.music} />
-                <Group title="Sabbath School" description="18 ITEMS" picture={Images.architecture} />
-                <Group title="Escuela Sabatica" description="8 ITEMS" picture={Images.travel} />
+                <Lessons title="Ecole Du Sabbat" description="15 ITEMS" picture={Images.music} />
+                <Lessons title="Sabbath School" description="18 ITEMS" picture={Images.architecture} />
+                <Lessons title="Escuela Sabatica" description="8 ITEMS" picture={Images.travel} />
             </BaseContainer>
         );
     }
 }
 
-type GroupProps = {
+type LessonProps = {
     title: string,
     description: string,
     picture: string
 };
 
-class Group extends React.PureComponent<GroupProps> {
+class Lessons extends React.PureComponent<LessonProps> {
 
     render(): React.Node {
         const {title, description, picture} = this.props;
